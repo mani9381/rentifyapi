@@ -10,7 +10,7 @@ const {postModel} = require('./models/property')
 const app = express()
 app.use(cors()) // allow all ip to access this server 
 app.use(express.json()) // to parse the data from frontend
-const uri = 'mongodb+srv://kits123:kits@cluster0.tas8v.mongodb.net/retntify?retryWrites=true&w=majority&appName=Cluster0' // DB connecting uri
+const uri = 'mongodb://host:27017' // DB connecting uri
 
 
 mongoose.connect(uri)
